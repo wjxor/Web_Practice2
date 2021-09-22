@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>멀티 메뉴를 위한, 선택자 튜토리얼 1</title>
+</head>
+
+<body>
+    <h1>요구 : 2차메뉴까지 마크업해주세요.(즉 아래 메뉴들을 하나로 합쳐주세요.)</h1>
+
+    <!-- nav.menu-1>ul>li*4>a[href=#]{1차 메뉴 아이템 $} -->
+
+    <!-- 힌트 -->
+    <!--
+    - ul > li > a 는 불변의 패턴이다.
+    - ul은 ul을 자식으로 둘 수 없다.
+    - a는 대부분의 경우 오직 텍스트만 가질 수 있다.
+    - li는 li를 자식으로 둘 수 없다.
+    - ul의 자식은 무조건 li 여야 한다.
+    - li는 그 어떤 것도 자식으로 가질 수 있다.
+    -->
+
+    <nav class="menu-1">
+        <ul>
+            <li><a href="#">동물</a></li>
+            <li><a href="#">식물</a></li>
+            <li><a href="#">광물</a></li>
+        </ul>
+    </nav>
+
+    <!-- ul>li*2>a[href=#]{2차 메뉴 아이템 $} -->
+    <ul>
+        <li><a href="#">포유류</a></li>
+        <li><a href="#">조류</a></li>
+    </ul>
+
+    <ul>
+        <li><a href="#">과일</a></li>
+        <li><a href="#">야채</a></li>
+    </ul>
+
+    <ul>
+        <li><a href="#">금속</a></li>
+        <li><a href="#">비금속</a></li>
+    </ul>
+</body>
+
+</html>
