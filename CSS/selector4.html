@@ -3,33 +3,22 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>멀티 메뉴를 위한, 선택자 튜토리얼 3</title>
+    <title>멀티 메뉴를 위한, 선택자 튜토리얼 4</title>
     <style>
-        /* 1st 방법 */
-        .menu-1>ul>li>ul>li {
+        .menu-1>ul>li>a {
             display: none;
         }
 
-        /* 2nd 방법 */
-        .menu-1>ul li li {
-            display: none;
-        }
-
-        /* 3rd 방법 */
-        .menu-1 ul li li {
-            display: none;
-        }
-
-        /* 4th 방법 */
-        .menu-1 li li {
-            display: none;
+        .menu-1 > ul > li > a:hover + ul {
+            background-color: red;
         }
     </style>
 </head>
 
 <body>
-    <h1>완료 : 2차메뉴아이템을 모두 숨겨주세요.</h1>
-    <h1>요구 : 기존 CSS를 전부 지우고, 2차 메뉴를 숨겨주세요.</h1>
+    <h1>완료 : CSS 를 전부 초기화 하고 1차 메뉴아이템 텍스트를 숨겨주세요.</h1>
+    <h1>요구 : 기존 CSS를 전부 지우고, 1차 메뉴아이템 텍스트에 마우스를 올렸을 때 인접동생인 ul의 배경색을 red로 변경해주세요.</h1>
+    <h1>힌트 : 인접동생선택자 : `+`</h1>
 
     <nav class="menu-1">
         <ul>
