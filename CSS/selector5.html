@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>멀티 메뉴를 위한, 선택자 튜토리얼 5</title>
+    <style>
+        .menu-1>ul>li>ul {
+            display: none;
+        }
+
+        .menu-1>ul>li:hover>ul {
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>완료 : CSS 를 전부 초기화 하고 1차 메뉴아이템에 마우스를 올렸을 때 자식인 ul의 배경색을 red로 변경해주세요.</h1>
+    <h1>요구 : 기존 CSS를 전부 지우고, 2차 메뉴를 숨긴 상태에서 1차 메뉴 아이템에 마우스를 올렸을 때 자식인 메뉴(2차메뉴)를 보여주세요.</h1>
+
+    <nav class="menu-1">
+        <ul>
+            <li>
+                <a href="#">동물</a>
+
+                <ul>
+                    <li><a href="#">포유류</a></li>
+                    <li><a href="#">조류</a></li>
+                </ul>
+            </li>
+
+            <li>
+                <a href="#">식물</a>
+
+                <ul>
+                    <li><a href="#">과일</a></li>
+                    <li><a href="#">야채</a></li>
+                </ul>
+            </li>
+
+            <li>
+                <a href="#">광물</a>
+
+                <ul>
+                    <li><a href="#">금속</a></li>
+                    <li><a href="#">비금속</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+
+</body>
+
+</html>
